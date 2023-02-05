@@ -1,0 +1,75 @@
+# key-value pairs
+"key1" : "This is key 1"
+1 : "This is the key No.1"
+
+# to tell yaml that we have different document in the yaml file we will  use " --- " to seperate the document
+---
+
+#lists
+- Key1
+- Key2
+- Key3
+- Key4
+
+---
+
+# inside the block
+cities:
+ - new delhi
+ - mumbai
+ - Kolkata
+
+---
+
+# Data in a single line
+cities: [new delhi, mumbai]
+
+---
+
+{mango : "yellow fruit", age : 56}
+
+---
+#Data Types
+ #String 
+ name : Rohit
+ age : "21"
+ class : 'class of 2020'
+
+# write a single, line in multiple lines
+message: > 
+this is a 
+multi line
+message
+
+# Number
+num : 12321
+float : 39.78
+
+# NO for false and yes for true
+bool : No
+Bool : !!Yes
+
+#specifing types
+zero: !!int 0
+pos: !!int 1
+neg: !!int -1 
+binary: !!int 0b11101
+oct: !!int 06574
+hex: !!int 0x45
+
+#comma values
+commavalue: !!int 54_000 #54,000
+percentage: !!float 87.98
+infinite: !!float .inf
+nan: .nan
+novalue: !!null  null
+
+# date time
+date: !!timestamp 2023-12-14
+indiaTime: 2023-12-15T02:59:43.10+5:30 
+
+#Exponent
+expo: 6.023E56
+---
+# To tell yaml that it is the end of the file
+ ... 
