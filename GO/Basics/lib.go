@@ -25,5 +25,4 @@ func main(){
 	sort.Strings(name)
 	fmt.Println(name)
 	fmt.Println(sort.SearchStrings(name, "Roy"))
-
 }
