@@ -6,6 +6,7 @@ import(
 
 func main(){
 	var age int = 13
+	var name string = "Marketing user"
 
 	// fmt.Println(age <= 30)
 	// fmt.Println(age >= 20)
@@ -18,4 +19,14 @@ func main(){
 	}else {
 		fmt.Printf("Your age is %v You cannot drive", age )
 	}
+
+	if (name == "Sales person")|| (name == "Marketing User") {
+		fmt.Println("This is a Bussiness profile")
+	}else if (name ==  "SDE") || (name == "SRE") {
+		fmt.Println("This is a Technical Profile")
+	}else{
+		fmt.Println("This is a general profile")
+	}
+	
 }
+
